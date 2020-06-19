@@ -21,22 +21,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <TextView
-            android:id="@+id/tv_username"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:gravity="right"
-            android:text="@string/username"
-            android:textSize="16sp" />
-        <EditText
-            android:id="@+id/et_username"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:hint="@string/hint_username"
-            android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:text="@string/username"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:hint="@string/hint_username"
+                android:textSize="16sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -58,7 +58,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:hint="@string/hint_password"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:inputType="textPassword"/>
         </LinearLayout>
 
         <LinearLayout
@@ -102,5 +103,11 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"/>
 
 </LinearLayout>

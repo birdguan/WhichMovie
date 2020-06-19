@@ -1,15 +1,14 @@
 package com.birdguan.whichmovie.model;
 
-import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Author: birdguan
  * @Date: 2020/6/18 19:28
  */
-public class Film extends DataSupport {
+public class Film extends LitePalSupport {
     private int id;
     private String title;           // 电影标题
     private String images;          // 电影海报地址
