@@ -8,4 +8,12 @@
     <string name="login">登录</string>
     <string name="sign_up">注册</string>
     <string name="test">测试</string>
+    <string name="random">随机选择</string>
+    <string name="watched">已观看</string>
+    <string name="random_select">翻一部</string>
+    <string name="movie_title">标题</string>
+    <string name="movie_year">年代</string>
+    <string name="movie_rating">评分</string>
+    <string name="movie_director">导演</string>
+    <string name="movie_casts">演员</string>
 </resources>

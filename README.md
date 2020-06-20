@@ -3,3 +3,13 @@
 
 # Dependencies
 - [LitePal 3.1.1](https://github.com/LitePalFramework/LitePal)
+- [com.roughike:bottom-bar:2.3.1](com.roughike:bottom-bar:2.3.1)
+- OkHttp3
+
+# Acknowlege
+## 豆瓣api
+看到有不少人说豆瓣API无法申请了，其实Github还有[豆瓣API备份文档](http://www.doubanapi.com/movie.html#subject)，  
+还给出了apikey:0df993c66c0c636e29ecbb5344252a4a
+### 调用格式
+https://api.douban.com/v2/movie/subject/**id**?apikey=0df993c66c0c636e29ecbb5344252a4a  
+其中**id**需要自己替换。

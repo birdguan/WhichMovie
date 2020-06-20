@@ -1,0 +1,14 @@
+<tabs>
+    <tab
+        id="@+id/tab_watched"
+        title="已观看"
+        icon="@drawable/icbar_watched"/>
+    <tab
+        id="@+id/tab_random"
+        title="看缘分"
+        icon="@drawable/icbar_random"/>
+    <tab
+        id="@+id/tab_favourite"
+        title="收藏夹"
+        icon="@drawable/icbar_favourite"/>
+</tabs>
