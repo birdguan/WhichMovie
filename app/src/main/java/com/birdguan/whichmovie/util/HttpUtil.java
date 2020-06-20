@@ -12,7 +12,15 @@ public class HttpUtil {
     public static void sendOkHttpRequest(String address, okhttp3.Callback callback) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://api.douban.com/v2/movie/subject/1259604?apikey=0df993c66c0c636e29ecbb5344252a4a")
+                .url(address)
+                .build();
+        client.newCall(request).enqueue(callback);
+    }
+
+    public static void sendOkHttpRequestToGetId(String address, okhttp3.Callback callback) {
+        OkHttpClient client = new OkHttpClient();
+        Request request = new Request.Builder()
+                .url(address)
                 .build();
         client.newCall(request).enqueue(callback);
     }

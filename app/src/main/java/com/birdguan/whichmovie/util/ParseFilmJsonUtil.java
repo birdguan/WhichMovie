@@ -25,15 +25,15 @@ public class ParseFilmJsonUtil {
         JsonElement element = parser.parse(json);
         if (element.isJsonObject()) {
             JsonObject object = element.getAsJsonObject();
-            // 电影不存在
-            if ("movie_not_found".equals(object.get("msg").getAsString())) {
-                film.setTitle("Not found");
-                film.setImages("https://img9.doubanio.com\\/view\\/photo\\/s_ratio_poster\\/public\\/p468924505.webp");
-                film.setRating(0.0f);
-                film.setDirectors(new ArrayList<String>());
-                film.setCasts(new ArrayList<String>());
-                return film;
-            }
+//            // 电影不存在
+//            if ("movie_not_found".equals(object.get("msg").getAsString())) {
+//                film.setTitle("Not found");
+//                film.setImages("https://img9.doubanio.com\\/view\\/photo\\/s_ratio_poster\\/public\\/p468924505.webp");
+//                film.setRating(0.0f);
+//                film.setDirectors(new ArrayList<String>());
+//                film.setCasts(new ArrayList<String>());
+//                return film;
+//            }
             // 电影标题
             String title = object.get("title").getAsString();
             film.setTitle(title);
@@ -67,5 +67,18 @@ public class ParseFilmJsonUtil {
             film.setCasts(castList);
         }
         return film;
+    }
+
+    public static String getId(String json) {
+        Film film = Film.getFilmInstance();
+        JsonParser parser = new JsonParser();
+        JsonElement element = parser.parse(json);
+        String id = "100000";           // 默认id，随便写的
+        if (element.isJsonObject()) {
+            JsonObject object = element.getAsJsonObject();
+            // 电影ID
+            id = object.get("id").getAsString();
+        }
+        return id;
     }
 }
