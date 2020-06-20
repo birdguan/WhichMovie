@@ -13,9 +13,19 @@ public class Film extends LitePalSupport {
     private String title;           // 电影标题
     private String images;          // 电影海报地址
     private String year;            // 年代
-    private String rating;          // 评分
+    private Float rating;          // 评分
     private List<String> directors; // 导演
     private List<String> casts;     // 演员
+
+
+    private static Film filmInstance;
+    private Film() {}
+    public static synchronized Film getFilmInstance() {
+        if (filmInstance == null) {
+            filmInstance = new Film();
+        }
+        return filmInstance;
+    }
 
     public int getId() {
         return id;
@@ -49,11 +59,11 @@ public class Film extends LitePalSupport {
         this.year = year;
     }
 
-    public String getRating() {
+    public Float getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(Float rating) {
         this.rating = rating;
     }
 

@@ -16,4 +16,6 @@
     <string name="movie_rating">评分</string>
     <string name="movie_director">导演</string>
     <string name="movie_casts">演员</string>
+    <string name="watch">观看</string>
+    <string name="collect">收藏</string>
 </resources>

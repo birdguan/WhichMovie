@@ -97,9 +97,6 @@
                 android:layout_gravity="center"
                 android:text="@string/login"/>
 
-
-
-
         </LinearLayout>
 
     </LinearLayout>

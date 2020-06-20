@@ -3,96 +3,129 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_random"
+    <LinearLayout
+        android:id="@+id/camera_detail_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/test"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="200dp"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
         <ImageView
             android:id="@+id/movie_image"
-            android:layout_width="155dp"
-            android:layout_height="96dp"
-            android:layout_gravity="center"/>
+            android:layout_width="96dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_movie_image"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/movie_title"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/movie_title_prefix"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:text="@string/movie_title"/>
+
                 <TextView
-                    android:id="@+id/movie_year"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/movie_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/movie_year_prefix"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:text="@string/movie_year"/>
+
+                <TextView
+                    android:id="@+id/movie_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/movie_rating_prefix"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:text="@string/movie_rating"/>
-                <RatingBar
-                    android:id="@+id/movie_rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/movie_year"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <RatingBar
+                        android:id="@+id/movie_rating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        android:isIndicator="false"
+
+                        android:text="@string/movie_year" />
+                </LinearLayout>
+
+
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/movie_director_prefix"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:text="@string/movie_director"/>
                 <TextView
                     android:id="@+id/movie_director"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text=""/>
             </LinearLayout>
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/movie_casts_prefix"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:text="@string/movie_casts"/>
                 <TextView
                     android:id="@+id/movie_casts"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text=""/>
             </LinearLayout>
 
@@ -100,13 +133,38 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_random_select"
-        android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/random_select"
+        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="60dp">
+
+        <Button
+            android:id="@+id/btn_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/watch" />
+
+        <Button
+            android:id="@+id/btn_random_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/random_select" />
+
+        <Button
+            android:id="@+id/btn_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/collect" />
+    </LinearLayout>
+
+
 
 </RelativeLayout>

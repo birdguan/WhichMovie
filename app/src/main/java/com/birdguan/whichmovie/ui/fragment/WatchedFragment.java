@@ -16,9 +16,11 @@ import com.birdguan.whichmovie.R;
  * @Date: 2020/6/19 17:05
  */
 public class WatchedFragment extends Fragment {
+    private View view;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_watched, container, false);
+        view = inflater.inflate(R.layout.fragment_watched, container, false);
+        return view;
     }
 }

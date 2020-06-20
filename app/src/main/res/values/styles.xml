@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <string name="CommonText">
+        <item name="textSize_1">18sp</item>
+    </string>
+
 </resources>
