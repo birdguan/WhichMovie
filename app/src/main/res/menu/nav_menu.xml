@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_random"
-            android:title="@string/random"/>
-        <item android:id="@+id/nav_watched"
-            android:title="@string/watched"/>
+<!--        <item android:id="@+id/nav_random"-->
+<!--            android:title="@string/random"/>-->
+<!--        <item android:id="@+id/nav_watched"-->
+<!--            android:title="@string/watched"/>-->
+        <item
+            android:title="@string/author_birdguan"/>
+        <item
+            android:title="@string/email_birdguan_seu_edu_cn"/>
     </group>
 </menu>

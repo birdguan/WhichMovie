@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <litepal>
     <dbname value="db_whichfilm"/>
-    <version value="1"/>
+    <version value="2"/>
     <list>
         <mapping class="com.birdguan.whichmovie.model.User"></mapping>
         <mapping class="com.birdguan.whichmovie.model.Film"></mapping>
+        <mapping class="com.birdguan.whichmovie.model.WatchedFilm"></mapping>
+        <mapping class="com.birdguan.whichmovie.model.CollectedFilm"></mapping>
     </list>
 </litepal>

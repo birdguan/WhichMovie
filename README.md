@@ -6,6 +6,7 @@
 - [com.roughike:bottom-bar:2.3.1](com.roughike:bottom-bar:2.3.1)
 - OkHttp3
 - Picasso
+- [CircleButton](https://github.com/markushi/android-circlebutton)
 
 # 功能
 ## 翻一部
