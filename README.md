@@ -55,5 +55,5 @@ https://api.douban.com/v2/movie/subject/**id**?apikey=0df993c66c0c636e29ecbb5344
 
 
 # Contact
- **Author:** birdguan
+ **Author:** birdguan  
  **Email:** xuchen_guan@163.com
