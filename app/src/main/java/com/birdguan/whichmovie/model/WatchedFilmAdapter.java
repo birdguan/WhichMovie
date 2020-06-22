@@ -32,7 +32,11 @@ public class WatchedFilmAdapter extends RecyclerView.Adapter<WatchedFilmAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         WatchedFilm watchedFilm = watchedFilmList.get(position);
-        Picasso.with(holder.itemView.getContext()).load(watchedFilm.getImage()).into(holder.filmImage);
+        Picasso
+                .with(holder.itemView.getContext())
+                .load(watchedFilm.getImage())
+                .placeholder(R.drawable.default_movie_image)
+                .into(holder.filmImage);
         holder.textViewTitle.setText(watchedFilm.getTitle());
         holder.textViewYear.setText(watchedFilm.getYear());
         holder.ratingBarFilm.setRating(watchedFilm.getRating()/2);

@@ -63,7 +63,11 @@ public class RandomFragment extends Fragment {
                 case UPDATE_MOVIE:
                     film = (Film)msg.obj;
                     // TODO:placeholder
-                    Picasso.with(view.getContext()).load(film.getImages()).into(imageViewMovieImage);
+                    Picasso
+                            .with(view.getContext())
+                            .load(film.getImages())
+                            .placeholder(R.drawable.default_movie_image)
+                            .into(imageViewMovieImage);
                     textViewMovieTitle.setText(film.getTitle());
                     textViewMovieYear.setText(film.getYear());
                     ratingBarMovieRating.setRating(film.getRating() / 2);

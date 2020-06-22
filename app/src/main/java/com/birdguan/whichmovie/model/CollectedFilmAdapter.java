@@ -33,7 +33,11 @@ public class CollectedFilmAdapter extends RecyclerView.Adapter<CollectedFilmAdap
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         CollectedFilm collectedFilm = collectedFilmList.get(position);
-        Picasso.with(holder.itemView.getContext()).load(collectedFilm.getImage()).into(holder.imageViewCollectedFilm);
+        Picasso
+                .with(holder.itemView.getContext())
+                .load(collectedFilm.getImage())
+                .placeholder(R.drawable.default_movie_image)
+                .into(holder.imageViewCollectedFilm);
         holder.textViewCollectedTitle.setText(collectedFilm.getTitle());
         String year = collectedFilm.getYear();
         holder.textViewCollectedYear.setText(collectedFilm.getYear());
