@@ -24,7 +24,7 @@
     |id|返回的豆瓣电影条目id|String|
 
 
-2. 将拿到的id组成电影条目详细信息信息请求URLhttps://api.douban.com/v2/movie/subject/id?apikey=0df993c66c0c636e29ecbb5344252a4a，使用OkHttp3请求
+2. 将拿到的id组成电影条目详细信息信息请求URL，格式https://api.douban.com/v2/movie/subject/id?apikey=0df993c66c0c636e29ecbb5344252a4a，使用OkHttp3请求
 3. 解析豆瓣API返回的json，只获取需要的信息
 
     |名称|说明|类型|
