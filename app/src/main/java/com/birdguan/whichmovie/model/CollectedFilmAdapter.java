@@ -17,6 +17,15 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+
+/**
+ * @Author: birdguan
+ * @Date: 2020/6/18 19:14
+ */
+
+/**
+ * 收藏电影RecycleView的适配器
+ */
 public class CollectedFilmAdapter extends RecyclerView.Adapter<CollectedFilmAdapter.ViewHolder> {
 
     private List<CollectedFilm> collectedFilmList;

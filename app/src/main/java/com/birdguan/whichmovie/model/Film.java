@@ -10,12 +10,12 @@ import java.util.List;
  */
 public class Film extends LitePalSupport {
     private int id;
-    private String title;           // 电影标题
-    private String images;          // 电影海报地址
-    private String year;            // 年代
-    private Float rating;          // 评分
-    private List<String> directors; // 导演
-    private List<String> casts;     // 演员
+    private String title;               // 电影标题
+    private String images;              // 电影海报地址
+    private String year;                // 年代
+    private Float rating;               // 评分
+    private List<String> directors;     // 导演
+    private List<String> casts;         // 演员
 
 
     private static Film filmInstance;

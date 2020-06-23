@@ -24,6 +24,10 @@ import java.util.List;
  * @Author: birdguan
  * @Date: 2020/6/19 17:05
  */
+
+/**
+ * 收藏页Fragment
+ */
 public class FavouriteFragment extends Fragment {
 
     private View view;

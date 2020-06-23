@@ -2,6 +2,15 @@ package com.birdguan.whichmovie.model;
 
 import org.litepal.crud.LitePalSupport;
 
+
+/**
+ * @Author: birdguan
+ * @Date: 2020/6/18 19:14
+ */
+
+/**
+ * 用户收藏的电影bean
+ */
 public class CollectedFilm extends LitePalSupport {
 
     private int id;

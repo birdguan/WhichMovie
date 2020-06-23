@@ -41,6 +41,10 @@ import okhttp3.Response;
  * @Author: birdguan
  * @Date: 2020/6/19 16:49
  */
+
+/**
+ * 翻一部页Fragment
+ */
 public class RandomFragment extends Fragment {
     private static final String TAG = "RandomFragment";
     private View view;
@@ -57,6 +61,12 @@ public class RandomFragment extends Fragment {
     private Film film = Film.getFilmInstance();
 
     private static final int UPDATE_MOVIE = 1;
+
+    /**
+     * 处理Message
+     * Message来源：
+     * 1. UPDATE_MOVIE: 翻一部刷新按钮传入的Message，内容为Film实例
+     */
     private Handler handler = new Handler() {
         public void handleMessage(Message msg) {
             switch (msg.what) {
@@ -191,11 +201,7 @@ public class RandomFragment extends Fragment {
                         Message message = new Message();
                         message.what = UPDATE_MOVIE;
                         message.obj = film;
-                        Message message2 = new Message();
-//                              message2.what = 2;
-//                              message2.obj = responseData.substring(0, 10);
                         handler.sendMessage(message);
-//                              handler.sendMessage(message2);
                     }
 
                     @Override

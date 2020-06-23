@@ -16,6 +16,14 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+/**
+ * @Author: birdguan
+ * @Date: 2020/6/18 19:14
+ */
+
+/**
+ * 已观看电影RecycleView的Adapter
+ */
 public class WatchedFilmAdapter extends RecyclerView.Adapter<WatchedFilmAdapter.ViewHolder> {
 
     private List<WatchedFilm> watchedFilmList;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movie_card_layout_height">550dp</dimen>
+    <dimen name="movie_card_layout_margin_top">50dp</dimen>
+    <dimen name="movie_card_layout_margin_bottom">150dp</dimen>
+    <dimen name="movie_card_layout_margin_horizontal">15dp</dimen>
+    <dimen name="movie_detail_layout_margin_horizontal">20dp</dimen>
+    <dimen name="movie_detail_layout_margin_bottom">10dp</dimen>
+    <dimen name="movie_detail_category_tv_width">50dp</dimen>
+    <dimen name="movie_detail_category_tv_height">50dp</dimen>
+    <dimen name="movie_detail_image_width">144dp</dimen>
+    <dimen name="movie_detail_image_height">233dp</dimen>
+
+    <dimen name="user_icon_width">70dp</dimen>
+    <dimen name="user_icon_height">70dp</dimen>
+</resources>

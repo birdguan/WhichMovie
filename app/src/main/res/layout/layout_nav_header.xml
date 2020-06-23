@@ -8,8 +8,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/nav_icon_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/user_icon_width"
+        android:layout_height="@dimen/user_icon_height"
         android:src="@drawable/nav_icon"
         android:layout_centerInParent="true"/>
 
